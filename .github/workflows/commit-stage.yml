@@ -1,11 +1,12 @@
 name: commit-stage
 
-evn:
+on: push
+
+env:
   REGISTRY: ghcr.io
   IMAGE_NAME: alexanderglazovskiy/catalog-service
   VERSION: LATEST
 
-on: push
 jobs:
   build:
     name: Build and Test
